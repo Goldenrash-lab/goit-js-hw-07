@@ -37,16 +37,13 @@ function onImgClick(e) {
 	`,
       {
         onShow: (instance) => {
-          console.log("show");
           document.addEventListener("keydown", onInstanceKeydown);
         },
         onClose: (instance) => {
-          console.log("close");
           document.removeEventListener("keydown", onInstanceKeydown);
         },
       }
     );
-    // console.log(urlPic);
     instance.show();
   }
 }
